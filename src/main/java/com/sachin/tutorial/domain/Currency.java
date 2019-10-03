@@ -31,6 +31,7 @@ public class Currency {
     }
 
     public Currency(String ccyCode, String currency, float fxRate) {
+        super();
         this.ccyCode = ccyCode;
         this.currency = currency;
         this.fxRate = fxRate;

@@ -3,7 +3,7 @@ package com.sachin.tutorial.loadingcache;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = {"com.sachin.tutorial"})
+@SpringBootApplication
 public class LoadingcacheApplication {
 
     public static void main(String[] args) {

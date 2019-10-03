@@ -11,17 +11,17 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/currencies")
 public class CurrencyController {
 
     @Autowired
     private CurrencyService currencyService;
 
-    @GetMapping
-    public ResponseEntity<List<Currency>> getAllcurrencys() {
+    @RequestMapping("/getAll")
+    public List<Currency> getAllcurrencys() {
+        System.out.println("Hello #########################");
         List<Currency> list = currencyService.getAllCurrencies();
 
-        return new ResponseEntity<List<Currency>>(list, new HttpHeaders(), HttpStatus.OK);
+        return list;
     }
 
     @GetMapping("/{ccyCode}")
